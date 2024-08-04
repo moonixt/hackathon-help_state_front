@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom'
 import Homepage from './pages/HomePage'
@@ -9,7 +7,7 @@ import Newreport from './pages/reports/NewReport'
 import Register from './pages/users/Register'
 import LoginPage from './pages/users/LoginPage'
 import SideBar from './components/SideBar'
-
+import GetReportsActive from './pages/reports/GetReportsActive'
 
 
 function App() {
@@ -22,6 +20,8 @@ function App() {
           <Route path="/new-report" element={<Newreport />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/active-reports" element={<GetReportsActive />} />
+
 
 
         </Routes>

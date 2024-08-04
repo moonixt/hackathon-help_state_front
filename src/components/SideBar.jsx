@@ -17,7 +17,7 @@ const SideBar = () => {
             Ocorrências ativas
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiViewBoards}>
-            Estados
+            Locais de ajuda
           </Sidebar.Item>
           
           <Sidebar.Item href="#" icon={HiUser}>

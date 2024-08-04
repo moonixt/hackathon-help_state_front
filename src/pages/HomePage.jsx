@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   return (
     <div>
     <div className='pt-40'>
-    <h1>Bem vindo ao Help_state, onde você pode ajudar o mundo.</h1>
+    <h1>Bem vindo XXXX, Como podemos ajudar hoje?</h1>
 </div>
     <div className='pt-20 flex justify-center'>
         <div id='Cartões' className='space-y-10 pt-10'>
@@ -19,7 +20,7 @@ const Homepage = () => {
     <h2 className="card-title">Verificar ocorrências ativas</h2>
     <p>Verifique municipios disponíveis em seu estado</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Verificar</button>
+      <Link to={"/active-reports"}><button className="btn btn-primary">Verificar</button></Link>
     </div>
   </div>
 </div>
@@ -31,12 +32,12 @@ const Homepage = () => {
       <div className=" w-96 shadow-xl border-4 border-black bg-white rounded ">
   <figure>
     <img
-      src="https://s4.static.brasilescola.uol.com.br/be/2021/05/cidade-sp.jpg"
+      src="./public/history.svg"
       alt="Shoes" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Verificar Estados disponíveis</h2>
-    <p>Verifique estados disponíveis</p>
+    <h2 className="card-title">Verificar ocorrências concluídas</h2>
+    <p>Verifique as ocorrencias concluídas</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Verificar</button>
     </div>
